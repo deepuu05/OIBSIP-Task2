@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #head {
+            z-index: -1;
+            background-color: #081b29;
+            height: 700px;
+        }
+
+        .logo {
+
+            display: inline;
+            font-size: 30px;
+            /* border: 2px solid black; */
+            font-family: 'Poppins', sans-serif;
+            color: #93df6b;
+            font-weight: 600;
+            padding-left: 80px;
+
+        }
+
+        .navbar {
+            /* z-index: -1; */
+            display: inline;
+            margin-right: 80px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar ul li {
+            display: inline;
+            padding: 6px;
+            /* padding-right: 20px; */
+            margin: 0px 15px;
+            /* margin-right: 20px; */
+            font-size: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: .3s;
+        }
+
+        .navbar a:hover {
+
+            color: #93df6b;
+        }
+
+        .head2 {
+            z-index: 3;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            /* left: 0px; */
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            height: 650px;
+            /* border: 2px solid red; */
+            padding: 0px 10%;
+        }
+
+        .data {
+            /* background-color: aquamarine; */
+            width: 600px;
+        }
+
+        .data h1 {
+            font-size: 60px;
+            color: white;
+        }
+
+        .data h3 {
+            font-size: 180%;
+            color: #93df6b;
+        }
+
+        .data p {
+            font-size: 17px;
+             font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 10px 0px;
+        }
+
+        .btn {
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            height: 45px;
+            /* background-color: red; */
+
+        }
+
+        .btn a{
+            width: 150px;
+            height: 100%;
+            background-color: #93df6b;
+            border:2px solid #93df6b;
+            font-size: 25px;
+            border-radius: 11px;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content:  center;
+            align-items: center;
+            padding: 10px 4px;
+            
+        }
+
+        .btn a:nth-child(2){
+            /* padding: 10px 10px; */
+            background:transparent ;
+            color: #93df6b;
+
+        }
+        .footerContainer {
+            width: 100%;
+            /* padding: 70px 30px 20px ; */
+        }
+
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: rgb(0, 0, 0);
+            opacity: 0.9;
+        }
+
+        /* Hover affect on social media icon */
+        .socialIcons a:hover {
+            background-color: #111;
+            transition: 0.5s;
+        }
+
+        .socialIcons a:hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        
+
+        .footerBottom {
+            /* opacity: 0.3; */
+            margin-top: 10px;
+            background-color: #000000;
+            /* background-color: #046db8; */
+
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        .footerBottom p {
+            color: white;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+        .footer {
+            margin-top: 10px;
+            background-color: #000;
+            /* background-color: #046db8; */
+            height:100px;
+            /* border: 2px solid red; */
+
+
+        }
+
+
+        .design .circle{
+            z-index: 1;
+            aspect-ratio: 1;
+            position: absolute;
+            border-radius: 50%;
+            top: 55%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+
+        }
+        .circle:nth-child(1)
+        {
+            background: linear-gradient( 90deg,transparent 50%,#93df6b 50%);
+            width: 30rem;
+
+        }
+        .circle:nth-child(2)
+        {
+           background-image: url("deepimg.png");
+           width: 22rem;
+           background-position: center;
+           background-size: 115%;
+           box-shadow: 0 0 2rem white,
+           inset 0 0 1rem white,
+           0 0 2rem #93df6b;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <header class="head2">
+            <div class="logo"> Deepensh</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="section">
+            <div class="data">
+                <h1> Hi, I'm Deepensh</h1>
+                <h3> Front-end Developer </h3>
+                <p>
+                    
+                    SKILLS: HTML, CSS, JAVASCRIPT, JAVA, REACT
+                </p>
+                <div class="btn">
+                    <a href="#"> HIRE ME</a>
+                    <a href="#"> DOWNLOAD CV</a>
+
+                </div>
+
+                 <div class="right-container"></div>
+                 <div class="design">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+
+                 </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="footer">
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://github.com/deepuu05"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/deepuu05//"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/deepuu.05/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://telegram.org/"><i class='bx bxl-telegram'></i></a>
+                </div>
+            </div>
+    
+    
+            <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Deepensh</span></p>
+            </div>
+        </div>
+</body>
+
+</html>
